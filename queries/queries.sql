@@ -11,7 +11,7 @@ SELECT * FROM producto;
 SELECT nombre, precio AS precio_eur, precio AS precio_usd FROM producto;
 
 -- 5. Llista el nom dels productes, el preu en euros i el preu en dòlars estatunidencs (amb un tipus de canvi de 1 € = 1,1 $ i arrodonint el resultat a dues xifres decimals). Utilitza els següents àlies per a les columnes: nom del producte, euros, dòlars.
-SELECT nombre AS `nom del producte´, precio AS euros, ROUND(precio * 1.1, 2) AS `dòlars´ FROM producto;
+SELECT nombre AS `nom del producte`, precio AS euros, ROUND(precio * 1.1, 2) AS `dòlars` FROM producto;
 
 -- 6. Llista els noms (nombre) i els preus de tots els productes de la taula producto, convertint els noms a majúscula.
 SELECT UPPER(nombre) AS nombre, precio AS precio FROM producto;
@@ -26,7 +26,7 @@ SELECT nombre AS nombre, UPPER(SUBSTRING(nombre, 1, 2)) AS iniciales FROM fabric
 SELECT nombre AS nombre, ROUND(precio) AS precio FROM producto;
 
 -- 10. Llista els noms i els preus de tots els productes (precio truncado) de la taula producto, truncant el valor del preu per a mostrar-lo sense cap xifra decimal.
-SELECT nombre, TRUNCATE(precio, 0) AS `precio truncado´ FROM producto;
+SELECT nombre, TRUNCATE(precio, 0) AS `precio truncado` FROM producto;
 
 -- 11. Mostra una llista amb els codis dels fabricants que apareixen a la taula producto, incloent possibles repeticions.
 SELECT codigo_fabricante FROM producto;
